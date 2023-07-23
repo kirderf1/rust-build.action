@@ -7,6 +7,9 @@ inputs:
   RUSTTARGET:
     description: 'Output target'
     required: true
+  BINARIES:
+    description: 'List of binaries to build and include'
+    required: false
   EXTRA_FILES:
     description: 'List of extra files to include in build'
     required: false
@@ -33,7 +36,7 @@ inputs:
     required: false
   UPLOAD_MODE:
     description: 'What method to use to upload compiled binaries, supported values: (release, none), default: release'
-    require: false
+    required: false
 outputs:
   BUILT_ARCHIVE:
     description: 'Relative path to the archive containing compiled program'
