@@ -18,6 +18,7 @@ error() {
 # For backwards compatible also accept environment variable names, but parse all inputs in github
 # action format
 export RUSTTARGET="${INPUT_RUSTTARGET:-${RUSTTARGET:-}}"
+export BINARIES="${INPUT_BINARIES:-${BINARIES:-}}"
 EXTRA_FILES="${INPUT_EXTRA_FILES:-${EXTRA_FILES:-}}"
 # SRC_DIR is handled in build.sh
 ARCHIVE_TYPES="${INPUT_ARCHIVE_TYPES:-${ARCHIVE_TYPES:-}}"
