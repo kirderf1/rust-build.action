@@ -1,9 +1,9 @@
 FROM rust:1.68-alpine3.17
 
 LABEL "name"="Automate publishing Rust build artifacts for GitHub releases through GitHub Actions"
-LABEL "version"="1.4.3"
-LABEL "repository"="http://github.com/rust-build/rust-build.action"
-LABEL "maintainer"="Douile <25043847+Douile@users.noreply.github.com>"
+LABEL "version"="1.0.0"
+LABEL "repository"="http://github.com/kirderf1/rust-build.action"
+LABEL "maintainer"="kirderf1"
 
 # Add regular dependencies
 RUN apk add --no-cache curl jq git build-base bash zip tar xz zstd upx
