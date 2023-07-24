@@ -78,7 +78,9 @@ fi
 cd "$OUTPUT_DIR"
 
 if [ -n "${EXTRA_FILES+0}" ]; then
-  FILE_LIST="${FILE_LIST} ${EXTRA_FILES}"
+  for file in $(echo -n "${EXTRA_FILES}" | tr " " "\n"); do
+    FILE_LIST="${FILE_LIST} $(basename "$file")"
+  done
 fi
 
 FILE_LIST=$(echo "${FILE_LIST}" | awk '{$1=$1};1')

@@ -1,7 +1,7 @@
 FROM rust:1.68-alpine3.17
 
 LABEL "name"="Automate publishing Rust build artifacts for GitHub releases through GitHub Actions"
-LABEL "version"="1.0.0"
+LABEL "version"="1.0.1"
 LABEL "repository"="http://github.com/kirderf1/rust-build.action"
 LABEL "maintainer"="kirderf1"
 
