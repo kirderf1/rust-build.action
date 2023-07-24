@@ -71,7 +71,7 @@ if [ -z "${EXTRA_FILES+x}" ]; then
   warn "EXTRA_FILES not set"
 else
   for file in $(echo -n "${EXTRA_FILES}" | tr " " "\n"); do
-    cp --parents --recursive "$file" "$OUTPUT_DIR"
+    cp -r "$file" "$OUTPUT_DIR"
   done
 fi
 
